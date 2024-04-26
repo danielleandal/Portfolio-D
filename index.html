@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cc27f65909.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Computer Science Student</p>
+                <h1>Hi, I'm <span>Danielle </span>Andal from the<br></br> University of Central Florida</h1>
+            </div>
+        </div>
+    </div>
+
+    <!---------about-------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_1160.jpg" id="face" width="100">
+                   
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Danielle Andal and I’m currently a computer science student at the University of Central Florida at Orlando,
+                         where I will be completing my B.S.I've worked hard to constantly achieve at an exceptional level and to learn as much 
+                         as I can in both my academic and professional careers</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="'skills">
+                        <ul>
+                            <li><span>Program Language</span><br> C</br></li>
+                            <li><span>Program Language</span><br> Java</br></li>
+                            <li><span>Program Language</span><br> HTML/CSS</br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-Present</span><br> Patient Access Specialist at Halifax Health | UF Health</br></li>
+                            <p>Accurately schedule patients being registered for a hospital service.</p>
+                            <p>Obtain necessary documents required for scheduling and registration</p>
+                            <p>Documents all information obtained during pre-registration activities to ensure patients' accounts are complete for forwarding to other departments</p>
+                            <li><span>2020-2022</span><br></br> Beauty Advisor at Belk Co.</li>
+                            <p>Provided aesthetic advice, recommend, and sell items, explain how the products function, demonstrate how to utilize the products, and handle the cash register.</p>
+                            <p>Maintained floor and stock areas in accordance with store presentation and hygiene standards</p>
+                            <p>Unpacked new merchandise in a timely manner, deliveries were to be stored in a place that does not obstruct customer access to the department</p>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2025</span><br> University of Central Florida</br></li>
+                            <p>College of Engineering and Computer Science</p>
+                            <p>2024| 3.6 GPA</p>
+                            <p>Passed UCF CS Foundation Exam (January 2024)</p>
+                            <li><span>2020-2022</span><br> Daytona State College</br></li>
+                            <p>Associates of Arts Degree</p>
+                            <p>President’s List | Dual Enrolled</p>
+                            <p>2020| 3.8 GPA</p>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------services---------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title1">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Currently in the process of learning HTML/CSS and Javacript.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                  
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Designing Compiler</h2>
+                    <p>My effort has involved creating a small compiler using the C program language.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-codepen"></i>
+                    <h2>Building Database</h2>
+                    <p>Retrive, organize and manipulate data</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------Portfolio-------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title1">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/codeimg.webp" width="300" height="400">
+                    <div class="layer">
+                        <h3>Technical Documentation</h3>
+                        <p>description</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/codeimg.webp" width="300" height="400">
+                    <div class="layer">
+                        <h3>Product Landing</h3>
+                        <p>description</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/codeimg.webp" width="300" height="400">
+                    <div class="layer">
+                        <h3>Survey Form</h3>
+                        <p>description</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See more</a>
+        </div>
+    </div>
+
+    <!---------------contact----------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+            <div class="contact-left">
+                <h1 class=""sub-title>Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>dannaandal3@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>386-951-9905</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/danielle-andal-55a705255/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/danielle_ndl/"><i class="fa-brands fa-instagram"></i></i></a>
+                   
+                </div>
+                <a href="images/resume.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="What is your name" required>
+                    <input type="email" name="email" placeholder="What is your email" required>
+                    <textarea name="Message"  rows="6" placeholder="Do you have any questions for me?"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+        </div>
+        <div class="copyright">
+        <p><i class="fa-regular fa-heart"></i></p>
+    </div>
+    </div>
+        
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){  
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
