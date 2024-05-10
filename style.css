@@ -9,6 +9,9 @@ body{
     background: #fff;
     color: #000000;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 #header{
     width: 100%;
