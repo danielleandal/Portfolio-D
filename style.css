@@ -25,13 +25,14 @@ body{
 
 .container{
     padding: 30px 30px;
+    width: 100%;
+
 }
 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 .logo{
@@ -89,8 +90,6 @@ nav ul li a:hover::after{
     padding-left: 100px;
     background-color: rgb(249, 233, 235);
     /*rgb(250, 235, 237);*/
-    
-
 }
 
 
@@ -173,7 +172,7 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li span{
     color: #c86484;
-    font-size: 14px;;
+    font-size: 14px;
 }
 
 .tab-contents{
@@ -386,7 +385,6 @@ nav ul li a:hover::after{
 
 .btn.btn2{
     display: inline-block;
-   
 }
 
 
@@ -412,7 +410,6 @@ form .btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
-   
 
 }
 
@@ -441,11 +438,12 @@ nav .fa-solid{
     .header-text{
         margin-top:20%;
         margin-right: 30%;
-        font-size: 16px;;
+        font-size: 12px;;
     }
     .header-text h1{
-        font-size:30px;
+        font-size:16px;
     }
+
 
     nav .fa-solid{
         display: block;
@@ -469,6 +467,44 @@ nav .fa-solid{
         margin: 25px;
     }
 
+    #about{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #about .container{
+       padding-left: 20px;
+    background-color: pink;
+    }
+
+      .about-col-1 img{
+       margin-left: 110px;
+        
+      }
+      .tab-links.active-link::after{
+        width: 20%;
+        margin-left: 40px;
+      }
+
+    #about .about-col-2{
+        text-align: center;
+        flex-basis: 100%;
+        max-width: 100%;
+
+    }
+
+    #about .about-col-2 p{
+        padding: 0%;
+        margin: 0px;
+        width: 100%;
+    }
+ 
+    
+
+    #about .tab-links{
+        max-width: 150%;
+        margin-right: 10px;
+    }
+
     nav ul .fa-solid{
         position: absolute;
         top: 25px;
@@ -477,7 +513,12 @@ nav .fa-solid{
     }
 
     .sub-title{
-        font-size: 40px;
+        font-size: 20px;
+    }
+
+    #about img{
+        width: 170px;
+        height: 200px;
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
@@ -485,25 +526,57 @@ nav .fa-solid{
     }
     .about-col-1{
         margin-bottom: 20px;
-        margin-right: 90px;
+        margin-right: 0px;
     }
     .about-col-2{
-        font-size: 14px;
+        font-size: 10px;
+    
     }
 
+    .about-col-2 p{
+        padding-left: 50px;
+        flex-basis: 100%;
+        font-size: 10px;
+        text-align: center;
+    }
     .tab-links{
-        font-size: 16px;
-        margin-right: 20px;
+        font-size: 1px;
+        margin-right: 0px;
     }
 
     .contact-left, .contact-right{
         flex-basis: 100%;
-        margin: auto;
+
     }
 
-   
+
+    .contact-left{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .contact-right{
+        padding: 0px;
+        margin: 0px;
+    }
+    #services{
+        padding: 0px;
+    }
+
+    #portfolio{
+        padding: 0px;
+    }
+
+    #contact{
+        padding: 0px;
+        margin: 0px;
+    }
+
+
   
     .copyright{
         font-size: 14px;
     }
 }
+
